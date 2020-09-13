@@ -1,10 +1,9 @@
 # kintone
 
-[![Build Status](https://travis-ci.org/jue58/kintone.svg?branch=master)](https://travis-ci.org/jue58/kintone)
-[![codebeat badge](https://codebeat.co/badges/7f66de05-57a4-4712-9706-0f33169f530b)](https://codebeat.co/projects/github-com-jue58-kintone)
-[![Coverage Status](https://coveralls.io/repos/github/jue58/kintone/badge.svg?branch=add-coveralls-settings)](https://coveralls.io/github/jue58/kintone?branch=add-coveralls-settings)
-[![Inline docs](http://inch-ci.org/github/jue58/kintone.svg?branch=master&style=shields)](http://inch-ci.org/github/jue58/kintone)
-[![Gem Version](https://badge.fury.io/rb/kintone.svg)](https://badge.fury.io/rb/kintone)
+[![Test](https://github.com/koshilife/kintone/workflows/Test/badge.svg)](https://github.com/koshilife/kintone/actions?query=workflow%3ATest)
+[![codecov](https://codecov.io/gh/koshilife/kintone/branch/master/graph/badge.svg)](https://codecov.io/gh/koshilife/kintone)
+[![Gem Version](https://badge.fury.io/rb/kintone.svg)](http://badge.fury.io/rb/koshilife-kintone)
+[![license](https://img.shields.io/github/license/koshilife/kintone)](https://github.com/koshilife/kintone/blob/master/LICENSE.txt)
 
 A Ruby gem for communicating with the [kintone](https://kintone.cybozu.com/us/) REST API
 
@@ -48,6 +47,7 @@ api.access_token.token
 ```
 
 ### Supported API
+
 - [Record retrieval](#record_retrieval)
 - [Record register](#record_register)
 - [Record update](#record_update)
@@ -121,37 +121,37 @@ end
 # => "Created_datetime >= LAST_MONTH() and (text like \"Hello\" and number = 200) or (number > 100 and Created_by in (LOGINUSER())) order by record_id desc limit 10 offset 20"
 ```
 
-operator symbol | query helper
---- | ---
-= | field(:code) == other
-!= | field(:code) != other
-&gt; | field(:code) > other
-< | field(:code) < other
-&gt;= | field(:code) >= other
-<= | field(:code) <= other
-in | field(:code).in(["A", "B"])
-not in | field(:code).not_in(["A", "B"])
-like | field(:code).like("Hello")
-not like | field(:code).not_like("Hello")
-and | and!
-or | or!
-() | precede do; end
+| operator symbol | query helper                    |
+| --------------- | ------------------------------- |
+| =               | field(:code) == other           |
+| !=              | field(:code) != other           |
+| &gt;            | field(:code) > other            |
+| <               | field(:code) < other            |
+| &gt;=           | field(:code) >= other           |
+| <=              | field(:code) <= other           |
+| in              | field(:code).in(["A", "B"])     |
+| not in          | field(:code).not_in(["A", "B"]) |
+| like            | field(:code).like("Hello")      |
+| not like        | field(:code).not_like("Hello")  |
+| and             | and!                            |
+| or              | or!                             |
+| ()              | precede do; end                 |
 
-function | query helper
---- | ---
-LOGINUSER() | login_user
-PRIMARY_ORGANIZATION() | primary_organization
-NOW() | now
-TODAY() | today
-THIS_MONTH() | this_month
-LAST_MONTH() | last_month
-THIS_YEAR() | this_year
+| function               | query helper         |
+| ---------------------- | -------------------- |
+| LOGINUSER()            | login_user           |
+| PRIMARY_ORGANIZATION() | primary_organization |
+| NOW()                  | now                  |
+| TODAY()                | today                |
+| THIS_MONTH()           | this_month           |
+| LAST_MONTH()           | last_month           |
+| THIS_YEAR()            | this_year            |
 
-option | query helper
---- | ---
-order by | order_by(:code, :asc or :desc)
-limit | limit(20)
-offset | offset(30)
+| option   | query helper                   |
+| -------- | ------------------------------ |
+| order by | order_by(:code, :asc or :desc) |
+| limit    | limit(20)                      |
+| offset   | offset(30)                     |
 
 ### <a name="record_register"> Record register
 
