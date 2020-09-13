@@ -13,11 +13,11 @@ A Ruby gem for communicating with the [kintone](https://kintone.cybozu.com/us/) 
 
 ## Installation
 
-    gem install kintone
+    gem install koshilife-kintone
 
 or execute `bundle install` command after you insert the following into Gemfile
 
-    gem 'kintone'
+    gem 'koshilife-kintone'
 
 ## Usage
 
