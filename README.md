@@ -9,7 +9,7 @@ A Ruby gem for communicating with the [kintone](https://kintone.cybozu.com/us/) 
 
 ## Requirements
 
-- ruby 2.1.0 or later
+- ruby 2.4.0 or later
 
 ## Installation
 
