@@ -7,8 +7,8 @@
 
 AllCops:
   Exclude:
-    - 'Guardfile'
-    - 'vendor/**/*'
+    - "Guardfile"
+    - "vendor/**/*"
 
 # Configuration parameters: EnforcedStyle, SupportedStyles.
 Style/ClassAndModuleChildren:
@@ -28,7 +28,7 @@ Style/StringLiterals:
 
 Style/WordArray:
   Exclude:
-    - 'spec/**/**'
+    - "spec/**/**"
 
 Style/AsciiComments:
   Enabled: false
@@ -41,7 +41,7 @@ Style/FrozenStringLiteralComment:
 
 Style/SymbolProc:
   Exclude:
-    - 'lib/kintone/query.rb'
+    - "lib/kintone/query.rb"
 
 Style/SignalException:
   EnforcedStyle: only_raise

@@ -1,7 +1,10 @@
-require 'rubygems'
+require 'simplecov'
+SimpleCov.start
+if ENV['CI'] == 'true'
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
+
 require 'kintone'
 require 'webmock/rspec'
 require 'rspec-parameterized'
-require 'coveralls'
-
-Coveralls.wear!
