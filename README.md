@@ -2,7 +2,7 @@
 
 [![Test](https://github.com/koshilife/kintone/workflows/Test/badge.svg)](https://github.com/koshilife/kintone/actions?query=workflow%3ATest)
 [![codecov](https://codecov.io/gh/koshilife/kintone/branch/master/graph/badge.svg)](https://codecov.io/gh/koshilife/kintone)
-[![Gem Version](https://badge.fury.io/rb/kintone.svg)](http://badge.fury.io/rb/koshilife-kintone)
+[![Gem Version](https://badge.fury.io/rb/kintone.svg)](http://badge.fury.io/rb/kintone-oauth-extension)
 [![license](https://img.shields.io/github/license/koshilife/kintone)](https://github.com/koshilife/kintone/blob/master/LICENSE.txt)
 
 A Ruby gem for communicating with the [kintone](https://kintone.cybozu.com/us/) REST API
@@ -13,11 +13,11 @@ A Ruby gem for communicating with the [kintone](https://kintone.cybozu.com/us/) 
 
 ## Installation
 
-    gem install koshilife-kintone
+    gem install kintone-oauth-extension
 
 or execute `bundle install` command after you insert the following into Gemfile
 
-    gem 'koshilife-kintone'
+    gem 'kintone-oauth-extension'
 
 ## Usage
 
