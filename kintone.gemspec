@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'kintone/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'koshilife-kintone'
+  spec.name          = 'kintone-oauth-extension'
   spec.version       = Kintone::VERSION
   spec.authors       = ['Kenji Koshikawa']
   spec.email         = ['koshikawa2009@gmail.com']
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/koshilife/kintone'
   spec.metadata['changelog_uri'] = "#{spec.metadata['source_code_uri']}/blob/master/CHANGELOG.md"
-  spec.metadata['documentation_uri'] = "https://www.rubydoc.info/gems/koshilife-kintone/#{spec.version}"
+  spec.metadata['documentation_uri'] = "https://www.rubydoc.info/gems/kintone-oauth-extension/#{spec.version}"
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }

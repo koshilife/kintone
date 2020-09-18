@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.2.1 (2020-09-18)
+
+rename gem to `kintone-oauth-extension`.
+
 ## 0.2.0 (2020-09-14)
 
 Initial release of koshilife-kintone
